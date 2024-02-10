@@ -1,0 +1,14 @@
+old_string = input("Enter a string: ")
+
+list = list(old_string)
+
+for i in range(1, len(old_string), 2):
+    list[i] = list[i].capitalize()
+
+new_string= ""
+
+for i in list:
+   new_string = new_string + i
+
+print("Old String=",old_string)
+print("New String=",new_string)
